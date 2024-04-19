@@ -1,0 +1,18 @@
+const { sensitiveHeaders } = require('http2');
+const path = require('path');
+
+const rootDir = (...paths) => path.resolve(process.cwd(), 'lib', ...paths)
+
+/*
+The seeders and the migrations folder is the same
+*/
+
+module.exports = {
+  config: rootDir('config', 'database.json'),
+  'models-path': rootDir('db', 'models'),
+  'seeders-path': rootDir('db', 'migrations'),
+  'migrations-path': rootDir('db', 'migrations'),
+};
+
+
+
