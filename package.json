@@ -4,13 +4,13 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --inspect ."
+    "dev": "nodemon --inspect .",
+    "start": "node ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "exports": "./index.js",
+  "main": "index.mjs",
   "dependencies": {
     "cors": "2.8.5",
     "express": "4.19.2",
